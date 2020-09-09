@@ -1,32 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <van-nav-bar title="Vue" />
+    <router-view></router-view>
+    <van-tabbar route v-model="active">
+      <van-tabbar-item icon="home-o" to="/home">首页</van-tabbar-item>
+      <van-tabbar-item icon="search" to="/search">搜索</van-tabbar-item>
+      <van-tabbar-item icon="shopping-cart-o" :badge="num" to="/cart">购物车</van-tabbar-item>
+      <van-tabbar-item icon="setting-o" to="/about">关于</van-tabbar-item>
+    </van-tabbar>
   </div>
 </template>
+<script>
+export default {
+  data(){
+    return{
+      num:2
+    }
+  }
+};
+</script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+#app .van-nav-bar {
+  background-color: yellowgreen;
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.van-nav-bar .van-nav-bar__title {
+  color: black;
 }
 </style>

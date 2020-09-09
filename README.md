@@ -1,19 +1,20 @@
 # vue_mobile
 
-## Project setup
+### 安装依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 运行
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 打包
 ```
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 样式
+
+![image-20200909105910926](C:\Users\半生荏苒\AppData\Roaming\Typora\typora-user-images\image-20200909105910926.png)
